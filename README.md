@@ -1,5 +1,5 @@
-Welcome to the Glitch BETA
-==========================
+Welcome to Glitch
+=================
 
 Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
@@ -11,17 +11,27 @@ Find out more [about Glitch](https://glitch.com/about).
 Your Project
 ------------
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+### ← README.md
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+That's this file, where you can tell people what your cool website does and how you built it.
 
+### ← index.html
 
-Made by [Fog Creek](https://fogcreek.com/)
+Where you'll write the content of your website. 
+
+### ← style.css
+
+CSS files add styling rules to your content.
+
+### ← script.js
+
+If you're feeling fancy you can add interactivity to your site with JavaScript.
+
+### ← assets
+
+Drag in `assets`, like images or music, to add them to your project
+
+Made by [Glitch](https://glitch.com/)
 -------------------
 
 \ ゜o゜)ノ
