@@ -1,13 +1,143 @@
-/* and again */
-/* add new comment */
 /* CSS files add styling rules to your content */
 
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+#container {
+  font-family: helvetica, arial, sans-serif;
+  padding: 1em;
+  text-align: center;
+  width: 96vw;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: teal;
+  margin-bottom: 1rem;
+}
+p {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+/* profile area */
+#profile-area img {
+  clip-path: circle();
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  object-fit: cover;
+  object-position: 0 50%;
+  
+  /* To look good on desktop */
+  max-height: 300px;
+  max-width: 300px;
+  
+  /* To render on Safari */
+  -webkit-clip-path: circle();
+}
+
+/* more info button */
+
+::-webkit-details-marker {
+  display: none;
+}
+
+#more-info summary {
+  background-color: white;
+  height: min-content;
+  padding: 0.5rem;
+  pointer-events: none;
+  position: sticky;
+  width: 100%;
+  top: 0;
+}
+
+#more-info summary #more-button {
+  background-color: white;
+  border: solid 1px teal;
+  border-radius: 5px;
+  box-shadow: 2px 2px;
+  cursor: pointer;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em;
+  pointer-events: all;
+
+  /* for safari support */
+  position: -webkit-sticky;
+}
+
+#more-info details[open] summary #more-button {
+  background-color: lightgrey;
+}
+
+#more-info summary {
+  /* for removing the details marker on Firefox */
+  list-style: none;
+  outline: none;
+}
+
+#more-info summary:focus #more-button {
+  outline: auto;
+}
+
+/* more info section contents */
+
+#profile-header {
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-card,
+#profile-header {
+  border: solid 1px teal;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+#profile-cards {
+  /* for better desktop display */
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100rem;
+  margin: auto;
+}
+
+.profile-card {
+  width: 80%;
+  max-width: 20em;
+  padding: 1rem;
+}
+
+.profile-card img {
+  border-radius: 3px;
+  box-shadow: grey 4px 4px 6px 3px;
+  width: 10em;
+  height: 8em;
+  object-fit: cover;
+}
+
+/* social links area */
+#social-links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60vw;
+  /*  To look good on desktop  */
+  max-width: 20rem;
+}
+
+#social-links img {
+  height: 2.5rem;
+  width: 2.5rem;
 }

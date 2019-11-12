@@ -1,37 +1,50 @@
-Welcome to Glitch
-=================
+# How to build your own Profile Site
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This app is a finished version of a profile site that you can remix and build yourself. It's all HTML and CSS with a teeny bit of Javascript, so very beginner-friendly. We'll use Firefox to build this, because they have great debugging tools for frontend web programming.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+## Step-by-step
 
-Find out more [about Glitch](https://glitch.com/about).
+### Lay out the HTML structure of your page
 
+- Add HTML tags. We're going to use:
+  section
+  div
+  img
+  h1
+  p
+  details/summary
 
-Your Project
-------------
+For the header we'll also need <link> and <script>
 
-### ← README.md
+- Add CSS rule to colour and give width to the sections so you can see them
 
-That's this file, where you can tell people what your cool website does and how you built it.
+- Reset CSS
 
-### ← index.html
+### Add a profile picture in whatever shape you want
 
-Where you'll write the content of your website. 
+First grab your photo and upload it to the assets directory
 
-### ← style.css
+Use Clippy https://bennettfeely.com/clippy/ to generate the outline you'd like to use
 
-CSS files add styling rules to your content.
+Here's a photo you can use as a placeholder if you don't want to be rushed into making a decision!
 
-### ← script.js
+### Add some social media links
 
-If you're feeling fancy you can add interactivity to your site with JavaScript.
+Free icons from IconFinder (attribute in readme!)
+I like this one https://www.iconfinder.com/search/?q=iconset%3Alogos-and-brands-2
 
-### ← assets
+### Add web fonts to make the design your own
+https://fonts.google.com/
 
-Drag in `assets`, like images or music, to add them to your project
+### Add a collapsible section with more information about you
 
-Made by [Glitch](https://glitch.com/)
--------------------
+Details/summary
+Social cards
 
-\ ゜o゜)ノ
+### Make it look as good on desktop as on mobile
+
+### Check out how it looks on non-Firefox browsers
+
+## Made by [Sheridan](https://glitch.com/@sheridan) on Glitch
+
+\ ゜ o ゜)ノ
