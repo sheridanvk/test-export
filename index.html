@@ -2,105 +2,26 @@
 <html lang="en">
   <head>
     <title>Hello!</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/style.css" />
-
+    <link rel="stylesheet" href="/style.css">
+    
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-
-    <!-- import the webpage's webfonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=block"
-      rel="stylesheet"
-    />
-  </head>
+  </head>  
   <body>
-    <div id="container">
-      <h1>oh hey there, internet</h1>
-      <section id="profile-area">
-        <p>
-          i'm sheridan, a software engineer at Glitch!
-        </p>
-        <img
-          src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2FIMG-20180421-WA0005.jpeg?v=1573425801361"
-        />
-      </section>
+    <h1>Hi there!</h1>
+    
+    <p>
+      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+    </p>
 
-      <section id="more-info">
-        <details>
-          <summary>
-            <div id="more-button">more about me</div>
-          </summary>
-          <div id="profile-header">
-            here are some things that I'm proud of
-          </div>
-          <div id="profile-cards">
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-          </div>
-        </details>
-      </section>
-
-      <section id="social-links">
-        <a href="https://www.goodreads.com/user/show/6112518-sheridan">
-          <img src="icons/goodreads.svg" />
-        </a>
-        <a href="https://glitch.com/@sheridan">
-          <img src="icons/glitch.svg" />
-        </a>
-        <a href="https://www.linkedin.com/me/sheridankates/">
-          <img src="icons/linkedin.svg" />
-        </a>
-        <a href="https://twitter.com/sheridanvk">
-          <img src="icons/twitter.svg" />
-        </a>
-      </section>
-
-      <section id="glitch-info">
-        <p>
-          remix your own version of this on
-          <a href="https://glitch.com/edit/#!/starter-profile">Glitch</a>
-        </p>
-      </section>
-    </div>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
   </body>
 </html>

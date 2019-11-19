@@ -1,50 +1,37 @@
-# How to build your own Profile Site
+Welcome to Glitch
+=================
 
-This app is a finished version of a profile site that you can remix and build yourself. It's all HTML and CSS with a teeny bit of Javascript, so very beginner-friendly. We'll use Firefox to build this, because they have great debugging tools for frontend web programming.
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
 
-## Step-by-step
+**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-### Lay out the HTML structure of your page
+Find out more [about Glitch](https://glitch.com/about).
 
-- Add HTML tags. We're going to use:
-  section
-  div
-  img
-  h1
-  p
-  details/summary
 
-For the header we'll also need <link> and <script>
+Your Project
+------------
 
-- Add CSS rule to colour and give width to the sections so you can see them
+### ← README.md
 
-- Reset CSS
+That's this file, where you can tell people what your cool website does and how you built it.
 
-### Add a profile picture in whatever shape you want
+### ← index.html
 
-First grab your photo and upload it to the assets directory
+Where you'll write the content of your website. 
 
-Use Clippy https://bennettfeely.com/clippy/ to generate the outline you'd like to use
+### ← style.css
 
-Here's a photo you can use as a placeholder if you don't want to be rushed into making a decision!
+CSS files add styling rules to your content.
 
-### Add some social media links
+### ← script.js
 
-Free icons from IconFinder (attribute in readme!)
-I like this one https://www.iconfinder.com/search/?q=iconset%3Alogos-and-brands-2
+If you're feeling fancy you can add interactivity to your site with JavaScript.
 
-### Add web fonts to make the design your own
-https://fonts.google.com/
+### ← assets
 
-### Add a collapsible section with more information about you
+Drag in `assets`, like images or music, to add them to your project
 
-Details/summary
-Social cards
+Made by [Glitch](https://glitch.com/)
+-------------------
 
-### Make it look as good on desktop as on mobile
-
-### Check out how it looks on non-Firefox browsers
-
-## Made by [Sheridan](https://glitch.com/@sheridan) on Glitch
-
-\ ゜ o ゜)ノ
+\ ゜o゜)ノ
