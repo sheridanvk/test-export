@@ -1,106 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <title>CSS Art: Marlow Moss</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- import the webpage's stylesheet -->
+    <!-- import the webpage's stylesheets -->
     <link rel="stylesheet" href="/reset.css" />
     <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-
-    <!-- import the webpage's webfonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=block"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/text.css" />
   </head>
   <body>
-    <div id="container">
-      <h1>oh hey there, internet</h1>
-      <section id="profile-area">
-        <p>
-          i'm sheridan, a software engineer at Glitch!
-        </p>
-        <img
-          src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2FIMG-20180421-WA0005.jpeg?v=1573425801361"
-        />
-      </section>
+    <header>
+      <div id="title" class="text">
+        <h1>
+          CSS Art: Marlow Moss
+        </h1>
+      </div>
+    </header>
 
-      <section id="more-info">
-        <details>
-          <summary>
-            <div id="more-button">more about me</div>
-          </summary>
-          <div id="profile-header">
-            here are some things that I'm proud of
+    <div id="artwork">
+      <div id="white-black-red" class="frame">
+        <div class="canvas">
+          <!-- The hz and vt classes don't do anything, except help identify which element is being referenced -->
+          <!-- Elements are defined from left to right, top to bottom -->
+          <div class="black line vt" style="grid-area: 1 / 11 / 5 / 12"></div>
+          <div class="black box" style="grid-area: 2 / 2 / 3 / 4"></div>
+          <div class="black line hz" style="grid-area: 4 / 6 / 5 / 9"></div>
+          <div class="black line vt" style="grid-area: 6 / 5 / 13 / 6"></div>
+          <div class="red box" style="grid-area: 6 / 8 / 11 / 9"></div>
+          <div class="black line hz" style="grid-area: 7 / 7 / 8 / 9"></div>
+          <div class="black line hz" style="grid-area: 9 / 7 / 10 / 9"></div>
+          <div class="black line hz" style="grid-area: 12 / 7 / 13 / 9"></div>
+          <div class="black line vt" style="grid-area: 14 / 2 / 18 / 3"></div>
+          <div class="black line hz" style="grid-area: 14 / 6 / 15 / 9"></div>
+          <div class="black line hz" style="grid-area: 16 / 10 / 17 / 11"></div>
+        </div>
+      </div>
+
+      <div class="attribution text">
+        <h2>
+          Wit, zwart en rood, 1953
+        </h2>
+        <h3>
+          <a
+            href="https://twitter.com/boerleen/status/861645027126251520"
+            target="_blank"
+            >Stedelijk museum, Amsterdam</a
+          >
+        </h3>
+      </div>
+      <div id="white-black-red-grey" class="frame">
+        <div class="canvas">
+          <div class="white box" style="grid-area: 1 / 1 / 2 / 4"></div>
+          <div class="red box" style="grid-area: 1 / 5 / 2 / 6"></div>
+          <div class="white line" style="grid-area: 3 / 1 / 4 / 6"></div>
+          <div class="grey box" style="grid-area: 5 / 1 / 6 / 2"></div>
+          <div class="white box" style="grid-area: 5 / 3 / 8 / 4"></div>
+          <div class="white box" style="grid-area: 5 / 5 / 8 / 6"></div>
+          <div class="white box" style="grid-area: 7 / 1 / 10 / 2"></div>
+          <div class="grey box" style="grid-area: 9 / 3 / 10 / 4"></div>
+          <div class="white box" style="grid-area: 9 / 5 / 10 / 6"></div>
+        </div>
+      </div>
+      <div class="attribution text">
+        <h2>
+          Wit, zwart, rood en grijs, 1932
+        </h2>
+        <h3>
+          <a
+            href="https://www.gemeentemuseum.nl/nl/collectie/wit-zwart-rood-en-grijs"
+            target="_blank"
+            >Gemeente Museum, The Hague</a
+          >
+        </h3>
+      </div>
+      <div id="yellow-black-white" class="frame">
+        <div class="canvas">
+          <div class="drop-shadow-wrapper" style="grid-area: 2 / 5 / 13 / 12">
+            <div class="white polygon"></div>
           </div>
-          <div id="profile-cards">
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-            <div class="profile-card">
-              <p>
-                I get paid to build awesome, delight-inducing experiences with
-                one of the most inspiring teams in the tech industry, at Glitch
-              </p>
-              <img
-                src="https://cdn.glitch.com/263d2785-210b-42f7-bf47-43d4ae7838ef%2Fformat.gif?v=1573428978680"
-              />
-            </div>
-          </div>
-        </details>
-      </section>
+          <div class="white line vt" style="grid-area: 3 / 2 / 6 / 3"></div>
+          <div class="black box" style="grid-area: 4 / 3 / 5 / 4"></div>
+          <div class="yellow box" style="grid-area: 8 / 7 / 9 / 8"></div>
+          <div class="black box" style="grid-area: 11 / 10 / 12 / 12"></div>
+          <div class="white line hz" style="grid-area: 12 / 10 / 13 / 12"></div>
+        </div>
+      </div>
+      <div class="attribution text">
+        <h2>
+          Composition in Yellow, Black and White, 1949
+        </h2>
+        <h3>
+          <a
+            href="https://www.tate.org.uk/art/artworks/moss-composition-in-yellow-black-and-white-t01113"
+            target="_blank"
+            >Tate, London</a
+          >
+        </h3>
+      </div>
 
-      <section id="social-links">
-        <a href="https://www.goodreads.com/user/show/6112518-sheridan">
-          <img src="icons/goodreads.svg" />
-        </a>
-        <a href="https://glitch.com/@sheridan">
-          <img src="icons/glitch.svg" />
-        </a>
-        <a href="https://www.linkedin.com/me/sheridankates/">
-          <img src="icons/linkedin.svg" />
-        </a>
-        <a href="https://twitter.com/sheridanvk">
-          <img src="icons/twitter.svg" />
-        </a>
-      </section>
+      <div id="red-blue-yellow-white" class="frame">
+        <div class="canvas">
+          <div class="red line hz" style="grid-area: 1 / 1 / 2 / 9"></div>
+          <div class="blue line vt" style="grid-area: 1 / 9 / 18 / 10"></div>
+          <div class="blue box" style="grid-area: 2 / 1 / 6 / 4"></div>
+          <div class="red line hz" style="grid-area: 2 / 10 / 3 / 12"></div>
+          <div class="red line vt" style="grid-area: 2 / 11 / 9 / 12"></div>
+          <div class="blue line hz" style="grid-area: 4 / 9 / 5 / 12"></div>
+          <div class="yellow box" style="grid-area: 5 / 10 / 8 / 11"></div>
+          <div class="red line hz" style="grid-area: 6 / 1 / 7 / 9"></div>
+          <div class="yellow line vt" style="grid-area: 7 / 1 / 8 / 2"></div>
+          <div class="blue box" style="grid-area: 7 / 2 / 8 / 5"></div>
+          <div class="red line vt" style="grid-area: 6 / 8 / 8 / 9"></div>
+          <div class="red box" style="grid-area: 8 / 1 / 12 / 5"></div>
+          <div class="blue line hz" style="grid-area: 8 / 5 / 9 / 11"></div>
+          <div class="blue box" style="grid-area: 8 / 5 / 10 / 7"></div>
+          <div class="blue line vt" style="grid-area: 8 / 6 / 17 / 7"></div>
+          <div class="blue line vt" style="grid-area: 9 / 11 / 13 / 12"></div>
+          <div class="yellow box" style="grid-area: 10 / 5 / 11 / 6"></div>
 
-      <section id="glitch-info">
-        <p>
-          remix your own version of this on
-          <a href="https://glitch.com/edit/#!/starter-profile">Glitch</a>
-        </p>
-      </section>
+          <div class="red line hz" style="grid-area: 11 / 1 / 12 / 7"></div>
+          <div class="yellow box" style="grid-area: 12 / 1 / 13 / 4"></div>
+          <div class="blue line hz" style="grid-area: 12 / 4 / 13 / 12"></div>
+          <div class="blue line vt" style="grid-area: 12 / 4 / 18 / 5"></div>
+          <div class="blue line hz" style="grid-area: 13 / 1 / 14 / 4"></div>
+          <div class="red box" style="grid-area: 13 / 10 / 15 / 11"></div>
+          <div
+            class="yellow line vt"
+            style="grid-area: 13 / 11 / 17 / 12"
+          ></div>
+          <div class="blue box" style="grid-area: 15 / 1 / 17 / 4"></div>
+          <div class="blue line hz" style="grid-area: 16 / 1 / 17 / 7"></div>
+          <div class="red box" style="grid-area: 17 / 1 / 18 / 4"></div>
+          <div class="yellow box" style="grid-area: 17 / 5 / 18 / 7"></div>
+          <div class="blue line hz" style="grid-area: 17 / 7 / 18 / 12"></div>
+        </div>
+      </div>
+      <div class="attribution text">
+        <h2>
+          Rood, Blauw, Geel en Wit, 1957-58
+        </h2>
+        <h3>
+          <a
+            href="https://mobile.twitter.com/womensart1/status/1020202134871203840"
+            target="_blank"
+            >Stedelijk museum, Amsterdam</a
+          >
+        </h3>
+      </div>
     </div>
+    <footer class="text">
+      <h3>
+        Created by
+        <a href="https://twitter.com/sheridanvk" target="_blank"
+          >Sheridan Kates</a
+        >
+      </h3>
+      <h3>
+        Code available on
+        <a href="https://glitch.com/~marlow-moss" target="_blank">Glitch</a>
+      </h3>
+    </footer>
   </body>
 </html>
