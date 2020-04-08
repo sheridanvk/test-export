@@ -1,40 +1,34 @@
-// checking this with the new changes
 // server.js
 // where your node app starts
 
-// init project
-const express = require('express')
-const app = express()
+// we've started you off with Express (https://expressjs.com/)
+// but feel free to use whatever libraries or frameworks you'd like through `package.json`.
+const express = require("express");
+const app = express();
 
-// we've started you off with Express, 
-// but feel free to use whatever libs or frameworks you'd like through `package.json`.
-
-// http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'))
-
-// http://expressjs.com/en/starter/basic-routing.html
-app.get("/", (request, response) => {
-  response.sendFile(__dirname + '/views/index.html')
-})
-
-// Simple in-memory store
+// our default array of dreams
 const dreams = [
   "Find and count some sheep",
   "Climb a really tall mountain",
   "Wash the dishes"
-]
+];
 
+// make all the files in 'public' available
+// https://expressjs.com/en/starter/static-files.html
+app.use(express.static("public"));
+
+// https://expressjs.com/en/starter/basic-routing.html
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
+
+// send the default array of dreams to the webpage
 app.get("/dreams", (request, response) => {
-  response.send(dreams)
-})
-
-// could also use the POST body instead of query string: http://expressjs.com/en/api.html#req.body
-app.post("/dreams", (request, response) => {
-  dreams.push(request.query.dream)
-  response.sendStatus(200)
-})
+  // express helps us take JS objects and send them as JSON
+  response.json(dreams);
+});
 
 // listen for requests :)
 const listener = app.listen(process.env.PORT, () => {
-  console.log(`Your app is listening on port ${listener.address().port}`)
-})
+  console.log("Your app is listening on port " + listener.address().port);
+});
